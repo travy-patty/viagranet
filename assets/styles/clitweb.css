@@ -45,6 +45,10 @@ button:hover {
 	background: #3D3D3D;
 }
 
+button:active {
+	background: #4d4d4d;
+}
+
 .button-label {
 	font-weight: 600;
 	vertical-align: middle;
@@ -78,12 +82,24 @@ button:hover {
 	width: 438px;
 	height: 66px;
 	background-color: #1E1E1E;
-	background: no-repeat url('/assets/images/earth.png'), #1E1E1E;
+	background-image: url('/assets/images/earth.png');
+	background-repeat: no-repeat;
 	image-rendering: pixelated;
 	image-rendering: -moz-crisp-edges;
 	image-rendering: crisp-edges;
 	border: 1px solid #000;
 	border-bottom: 0;
+}
+
+.header-left-aligned .header-content {
+	border-left: 0;
+	border-right: 1px solid #000;
+}
+
+.header-left-aligned .header-banner {
+	display: flex;
+	justify-content: left;
+	background-position: right;
 }
 
 .header-banner {
